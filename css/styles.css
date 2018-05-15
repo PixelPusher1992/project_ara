@@ -20,6 +20,11 @@
     background: #242427;
 }
 
+.sup {
+    vertical-align: super;
+    font-size: .65em;
+}
+
 /* SCHEDULE */
 .schedule {
     background-image: url("../img/noize-light.png");
@@ -35,12 +40,15 @@
 }
 .schedule-heading__sub {
     font-weight: 800;
-    width: 70%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 0 auto;
 }
 .schedule-heading__sub span {
     display: block;
     text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px 0;
 }
 
 .schedule-heading__sub .offline {
@@ -49,5 +57,37 @@
 
 .schedule-content {
     background: white;
-    box-shadow: 4px 0 6px rgba(0,0,0,.19);
+    box-shadow: 0 4px 6px rgba(0,0,0,.19);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.schedule-content__day {
+
+}
+
+.day-heading {
+    display: flex;
+}
+.day-heading__gray {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    background: #cecece;
+    font-weight: 800;
+    text-align: right;
+}
+.day-heading__time {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    color: #00bcd4;
+    font-weight: 600;
+    text-align: right;
+}
+
+.day-content {
+    padding: 10px 15px;
+    line-height: 24px;
+    font-size: 14px;
 }
