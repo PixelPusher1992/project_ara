@@ -3,6 +3,44 @@
     margin: 0 auto;
 }
 
+
+.blue {
+    color: #00bcd4;
+}
+
+.separator {
+    height: 2px;
+    background: #242427;
+}
+
+/* SCHEDULE */
 .schedule {
     background-image: url("../img/noize-light.png");
+    padding: 35px 15px;
+}
+.schedule-wrapper {
+    margin: 0 15px;
+}
+.schedule-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.schedule-heading__sub {
+    font-weight: 800;
+    width: 70%;
+    margin: 10px auto;
+}
+.schedule-heading__sub span {
+    display: block;
+    text-align: left;
+}
+
+.schedule-heading__sub .offline {
+    text-align: right;
+}
+
+.schedule-content {
+    background: white;
+    box-shadow: 4px 0 6px rgba(0,0,0,.19);
 }
