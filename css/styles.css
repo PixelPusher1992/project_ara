@@ -1,13 +1,52 @@
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
 .main-wrapper {
     margin: 0 auto;
+    background-color: #2a2a2f;
 }
 
 .container-content {
-    padding: 0 15px;
+    padding: 0 15px 60px;
 }
-.chart__diagramm{
+
+.soft_skills{
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: 30px;
+}
+
+.heading {
+    text-transform: uppercase;}
+
+.heading__blue {
+    color: #00bcd4;
+}
+
+.heading__white{
+    color: #fff;
+}
+
+.chart__diagramm {
     width: 100%;
     height: auto;
+}
+
+.chart__description{
+    list-style: none;
+    color: #fff;
+}
+
+.chart__sector{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.chart__about{
+    font-size: 14px;
+    font-weight: 400;
 }
 
 
@@ -53,6 +92,28 @@
 
 .schedule-heading__sub .offline {
     text-align: right;
+}
+
+.heading__underline:after {
+    display: block;
+    content: " ";
+    width: 150px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.start_course{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(to right, rgba(255,179,27,1) 0%, rgba(251,27,60,1) 100%);
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
+    color: #fff;
+
+
 }
 
 .schedule-content {
