@@ -1,3 +1,5 @@
+@import "../vars";
+
 .main-wrapper {
   margin: 0 auto;
   background-color: #2a2a2f;
@@ -74,7 +76,7 @@ h3 {
 
 
 .blue {
-  color: #00bcd4;
+  color: $color-blue;
 }
 .separator {
   height: 2px;
@@ -88,7 +90,7 @@ h3 {
 
 /* SCHEDULE */
 .schedule {
-  background-image: url("../img/noize-light.png");
+  background-image: url("../img/noize_light.png");
   padding: 35px 15px;
 
   &-wrapper {
@@ -125,7 +127,6 @@ h3 {
       &-heading {
         display: flex;
         &__gray {
-          flex: 1;
           box-sizing: border-box;
           padding: 5px 15px;
           background: #cecece;
@@ -133,7 +134,6 @@ h3 {
           text-align: right;
         }
         &__time {
-          flex: 1;
           box-sizing: border-box;
           padding: 5px 15px;
           color: #00bcd4;
