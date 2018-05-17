@@ -1,3 +1,14 @@
-@import "../libs/bootstrap/scss/bootstrap.scss";
+// CUSTOM BOOTSTRAP
+$grid-breakpoints: (
+        xs: 0,
+        sm: 320px,
+        md: 768px,
+        lg: 1200px,
+        xl: 1600px
+);
+@import "./../libs/bootstrap/scss/bootstrap";
+
+
+
 @import "../libs/_reset.scss";
 
