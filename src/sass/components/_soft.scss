@@ -1,0 +1,174 @@
+.main-wrapper {
+  margin: 0 auto;
+  background-color: #2a2a2f;
+}
+
+.container-content {
+  padding: 0 15px 60px;
+}
+
+h3 {
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.soft_skills{
+  text-align: center;
+  padding-top: 55px;
+  margin-bottom: 30px;
+}
+
+.start_course{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(to right, rgba(255,179,27,1) 0%, rgba(251,27,60,1) 100%);
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
+  color: #fff;
+}
+
+.heading {
+  text-transform: uppercase;
+  &__blue {
+    color: #00bcd4;
+  }
+  &__white{
+    color: #fff;
+  }
+  &__diagramm {
+    width: 100%;
+    height: auto;
+  }
+  &__underline:after {
+    display: block;
+    content: " ";
+    width: 150px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+.chart {
+  &__description{
+    list-style: none;
+    color: #fff;
+  }
+  &__sector{
+    font-size: 28px;
+    font-weight: 400;
+  }
+  &__about{
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+
+
+.blue {
+  color: #00bcd4;
+}
+.separator {
+  height: 2px;
+  background: #242427;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: .65em;
+}
+
+/* SCHEDULE */
+.schedule {
+  background-image: url("../img/noize-light.png");
+  padding: 35px 15px;
+
+  &-wrapper {
+    margin: 0 15px;
+  }
+  &-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    &__sub {
+      font-weight: 800;
+      width: 80%;
+      margin: 0 auto;
+      span {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px 0;
+      }
+
+      .offline {
+        text-align: right;
+      }
+    }
+  }
+  &-content {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,.19);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    .day {
+      &-heading {
+        display: flex;
+        &__gray {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 5px 15px;
+          background: #cecece;
+          font-weight: 800;
+          text-align: right;
+        }
+        &__time {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 5px 15px;
+          color: #00bcd4;
+          font-weight: 600;
+          text-align: right;
+        }
+      }
+      &-content {
+        padding: 10px 15px;
+        line-height: 24px;
+        font-size: 14px;
+      }
+    }
+  }
+  &-calendar {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px) {
+  .schedule-heading {
+    font-size: 32px;
+  }
+  .schedule-heading__sub {
+    width: 60%;
+  }
+  .schedule-heading__sub .online {
+    display: inline-block;
+    background: #242427;
+    padding: 7px 12px 5px;
+    margin-left: 100px;
+  }
+  .schedule-calendar {
+    display: block;
+  }
+}
