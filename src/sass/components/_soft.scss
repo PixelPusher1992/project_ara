@@ -1,6 +1,5 @@
 @import "../vars";
 
-
 .main-wrapper {
   margin: 0 auto;
   background-image: url("../img/noize_dark.png");
@@ -25,6 +24,7 @@ h3 {
 .chart__diagramm {
   width: 100%;
   height: auto;
+  margin-bottom: 45px;
 }
 
 .start_course {
@@ -61,18 +61,31 @@ h3 {
 }
 
 .chart {
+
   &__description {
     list-style: none;
     color: #fff;
+    margin-bottom: 60px;
   }
   &__sector {
     font-size: 28px;
     font-weight: 400;
+    margin-bottom: 20px;
   }
+
   &__about {
     font-size: 14px;
     font-weight: 400;
+
   }
+  }
+
+.chart__item {
+  margin-bottom: 40px;
+}
+
+.chart__item:last-child{
+  margin-bottom: 0;
 }
 
 .blue {
@@ -123,7 +136,7 @@ h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, .19);
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     .day {
       &-heading {
         display: flex;
@@ -221,3 +234,22 @@ h3 {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .zarplata {
+    &-item{
+    display: inline-block;
+  }
+  }
+  .schedule-heading__sub {
+    width: 60%;
+  }
+  .schedule-heading__sub .online {
+    display: inline-block;
+    background: #242427;
+    padding: 7px 12px 5px;
+    margin-left: 100px;
+  }
+  .schedule-calendar {
+    display: block;
+  }
+}
