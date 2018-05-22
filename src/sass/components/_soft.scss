@@ -1,10 +1,12 @@
+@import "../vars";
+
 .main-wrapper {
   margin: 0 auto;
-  background-color: #2a2a2f;
+  background-image: url("../img/noize_dark.png");
 }
 
 .container-content {
-  padding: 0 15px 60px;
+  padding: 0 0 60px 0;
 }
 
 h3 {
@@ -13,26 +15,27 @@ h3 {
   margin: 0;
 }
 
-.soft_skills{
+.soft_skills {
   text-align: center;
   padding-top: 55px;
   margin-bottom: 30px;
 }
 
-.chart__diagramm{
+.chart__diagramm {
   width: 100%;
   height: auto;
+  margin-bottom: 45px;
 }
 
-.start_course{
+.start_course {
   border: none;
   border-radius: 5px;
   outline: none;
-  background: linear-gradient(to right, rgba(255,179,27,1) 0%, rgba(251,27,60,1) 100%);
-  width: 100%;
+  background: linear-gradient(to right, rgba(255, 179, 27, 1) 0%, rgba(251, 27, 60, 1) 100%);
   padding: 15px 0;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.21);
   color: #fff;
+  text-transform: uppercase;
 }
 
 .heading {
@@ -40,7 +43,7 @@ h3 {
   &__blue {
     color: #00bcd4;
   }
-  &__white{
+  &__white {
     color: #fff;
   }
   &__diagramm {
@@ -56,26 +59,39 @@ h3 {
     margin-top: 20px;
   }
 }
+
 .chart {
-  &__description{
+
+  &__description {
     list-style: none;
     color: #fff;
+    margin-bottom: 60px;
   }
-  &__sector{
+  &__sector {
     font-size: 28px;
     font-weight: 400;
+    margin-bottom: 20px;
   }
-  &__about{
+
+  &__about {
     font-size: 14px;
     font-weight: 400;
+
   }
+  }
+
+.chart__item {
+  margin-bottom: 40px;
 }
 
-
+.chart__item:last-child{
+  margin-bottom: 0;
+}
 
 .blue {
-  color: #00bcd4;
+  color: $color-blue;
 }
+
 .separator {
   height: 2px;
   background: #242427;
@@ -88,8 +104,8 @@ h3 {
 
 /* SCHEDULE */
 .schedule {
-  background-image: url("../img/noize-light.png");
-  padding: 35px 15px;
+  background-image: url("../img/noize_light.png");
+  padding: 35px 0 0;
 
   &-wrapper {
     margin: 0 15px;
@@ -117,15 +133,14 @@ h3 {
   }
   &-content {
     background: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,.19);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .19);
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     .day {
       &-heading {
         display: flex;
         &__gray {
-          flex: 1;
           box-sizing: border-box;
           padding: 5px 15px;
           background: #cecece;
@@ -133,7 +148,6 @@ h3 {
           text-align: right;
         }
         &__time {
-          flex: 1;
           box-sizing: border-box;
           padding: 5px 15px;
           color: #00bcd4;
@@ -153,16 +167,81 @@ h3 {
   }
 }
 
+/* WAY */
+
+.way {
+  padding: 35px 0;
+
+  &__content{
+    padding: 0 15px;
+  }
+    &-heading {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 50px;
+     }
+
+}
+
+.way__worker{
+  width: 100%;
+  height: auto;
+}
 
 
+.plan-list {
 
+  &__item{
+    margin-bottom: 25px;
+  }
+  &__num{
+    height: 70px;
+    width: 70px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: -2px 2px 5px 0px rgba(0,175,197,1),
+                 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  }
 
+  &__desc{
 
+  }
+}
 
+.osnovnoy-wrapper{
+  background-image: url("../img/noize_light.png");
+}
 
-@media only screen and (min-width:768px) {
+.zarplata-item{
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
   .schedule-heading {
     font-size: 32px;
+  }
+  .schedule-heading__sub {
+    width: 60%;
+  }
+  .schedule-heading__sub .online {
+    display: inline-block;
+    background: #242427;
+    padding: 7px 12px 5px;
+    margin-left: 100px;
+  }
+  .schedule-calendar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .zarplata {
+    &-item{
+    display: inline-block;
+  }
   }
   .schedule-heading__sub {
     width: 60%;
