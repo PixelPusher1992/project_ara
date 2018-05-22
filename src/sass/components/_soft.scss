@@ -61,6 +61,7 @@ h3 {
 }
 
 .chart {
+  position: relative;
 
   &__description {
     list-style: none;
@@ -244,9 +245,9 @@ flex: 1;
 
 @media only screen and (min-width: 768px) {
   .zarplata {
-    &-item{
-    display: inline-block;
-  }
+    &-item {
+      display: inline-block;
+    }
   }
   .schedule-heading__sub {
     width: 60%;
@@ -259,5 +260,31 @@ flex: 1;
   }
   .schedule-calendar {
     display: block;
+  }
+
+  .chart {
+    margin-bottom: 35px;
+    width: 530px;
+    height: 730px;
+    text-align: center;
+    &__item {
+      &:not(:first-of-type) {
+        display: none;
+      }
+    margin-bottom: 0;
+    }
+    &__bg{
+      background-image: url("/img/buble_back.svg");
+      position: absolute;
+      z-index: 0;
+      height: 100%;
+      width: 530px;
+    }
+&__diagramm{
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+}
   }
 }
