@@ -350,6 +350,10 @@ flex: 1;
 }
 
 @media only screen and (min-width: 768px) {
+  .button {
+    text-align: center;
+  }
+
   .zarplata {
     &-item {
       display: inline-block;
@@ -373,24 +377,42 @@ flex: 1;
     width: 530px;
     height: 730px;
     text-align: center;
+    &__description {
+      margin-left: 150px;
+    }
     &__item {
       &:not(:first-of-type) {
         display: none;
       }
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
-    &__bg{
+    &__bg {
       background-image: url("/img/buble_back.svg");
       position: absolute;
       z-index: 0;
       height: 100%;
       width: 530px;
     }
-    &__diagramm{
+    &__diagramm {
       margin-top: 50px;
       position: relative;
       z-index: 1;
       width: 85%;
+    }
+  }
+  .way__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  .zarplata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-item:nth-child(2n+1) {
+      margin-right: 30px;
+
     }
   }
 }
