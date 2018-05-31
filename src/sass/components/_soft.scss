@@ -74,13 +74,17 @@ h3 {
   position: relative;
 
   &__item {
+    position: relative;
     margin-bottom: 40px;
     &.with-before:before {
-      content: '';
+      content: ' ';
       position: absolute;
-      left: -20px;
-      top: 80%;
-      background: url("../img/golovach.svg");
+      left: -30px;
+      top: -260px;
+      width: 50px;
+      height: 350px;
+      background: url("../img/glist.png");
+      z-index: 1;
     }
 
     &:last-child{
@@ -525,5 +529,14 @@ flex: 1;
       display: flex;
       align-items: center;
     }
-}
+  }
+  .osnovnoy-wrapper {
+    &__second {
+      margin: 0 30px;
+      box-shadow: 0 3px 24px rgba(0,0,0,0.3);
+      position: relative;
+      top: -30px;
+      background-image: url(../img/noize_light.png);
+    }
+  }
 }
