@@ -197,7 +197,8 @@ h3 {
 
 .days {
   padding: 5px 0;
-  margin: 0;
+  //margin: 0;
+  margin-bottom: 90px;
 }
 
 .days li {
@@ -403,6 +404,10 @@ flex: 1;
   }
   .schedule-calendar {
     display: block;
+    border-radius: 10px;
+    align-self: flex-start;
+    position: relative;
+    top: -30px;
   &__heading{
     text-align: right;
     color: #a9a9a9;
