@@ -177,7 +177,22 @@ h3 {
   }
 }
 
+.calendar__underline{
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
 
+.calendar__underline:after {
+  display: block;
+  content: " ";
+  width: 80px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 20px;
+  position: absolute;
+  right: 0px;
+}
 
 
 
@@ -192,7 +207,6 @@ h3 {
   width: 12.6%;
   color: #17ecff;
   text-align: center;
-  margin-bottom: 35px;
 }
 
 .days {
@@ -411,6 +425,8 @@ flex: 1;
   &__heading{
     text-align: right;
     color: #a9a9a9;
+    font-size: 36px;
+    padding-top: 80px;
   }
   }
 
