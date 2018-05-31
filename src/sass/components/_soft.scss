@@ -388,6 +388,11 @@ flex: 1;
 }
 
 @media only screen and (min-width: 768px) {
+  .main-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
   .schedule-heading {
     font-size: 32px;
   }
@@ -401,6 +406,16 @@ flex: 1;
     margin-left: 100px;
   }
   .schedule {
+    position: relative;
+    z-index: 0;
+    top: -70px;
+    padding-top: 115px;
+    transform: skew(-10deg);
+    box-shadow: 0 3px 24px rgba(0,0,0,.75);
+    &-wrapper {
+      transform: skew(10deg);
+    }
+
     &-calendar {
       background: url("../img/calendar_deco.png") 110px 260px no-repeat, url("../img/noize_dark.png");
       display: block;
@@ -413,6 +428,7 @@ flex: 1;
       position: relative;
       left: -50px;
       padding-left: 100px;
+      margin-bottom: 0;
     }
   }
 
