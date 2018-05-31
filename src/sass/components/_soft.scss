@@ -514,4 +514,16 @@ flex: 1;
     height: auto;
     margin-bottom: 45px;
   }
+  .plan-list {
+    &__item{
+      &:last-of-type{
+        position: relative;
+        left: 110%;
+        top: -125px;
+      }
+      margin-bottom: 42px;
+      display: flex;
+      align-items: center;
+    }
+}
 }
