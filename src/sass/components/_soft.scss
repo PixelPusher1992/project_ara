@@ -73,6 +73,20 @@ h3 {
 .chart {
   position: relative;
 
+  &__item {
+    margin-bottom: 40px;
+    &.with-before:before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 80%;
+      background: url("../img/golovach.svg");
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
   &__description {
     list-style: none;
     color: #fff;
@@ -88,15 +102,8 @@ h3 {
     font-size: 14px;
     font-weight: 400;
   }
-  }
-
-.chart__item {
-  margin-bottom: 40px;
 }
 
-.chart__item:last-child{
-  margin-bottom: 0;
-}
 
 .blue {
   color: $color-blue;
@@ -212,7 +219,7 @@ h3 {
 .days {
   padding: 5px 0;
   //margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .days li {
@@ -220,7 +227,7 @@ h3 {
   display: inline-block;
   width: 12.6%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size:12px;
   color: #17ecff;
 
@@ -393,9 +400,20 @@ flex: 1;
     padding: 7px 12px 5px;
     margin-left: 100px;
   }
-  .schedule-calendar {
-    background-image: url("../img/noize_dark.png");
-    display: block;
+  .schedule {
+    &-calendar {
+      background: url("../img/calendar_deco.png") 110px 260px no-repeat, url("../img/noize_dark.png");
+      display: block;
+      position: relative;
+      left: 50px;
+      box-shadow: 0 3px 24px rgba(0,0,0,.75);
+      z-index: 1;
+    }
+    &-content {
+      position: relative;
+      left: -50px;
+      padding-left: 100px;
+    }
   }
 
   .button {
@@ -426,7 +444,7 @@ flex: 1;
     text-align: right;
     color: #a9a9a9;
     font-size: 36px;
-    padding-top: 80px;
+    padding-top: 60px;
   }
   }
 
