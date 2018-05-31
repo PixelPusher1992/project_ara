@@ -410,10 +410,10 @@ flex: 1;
     z-index: 0;
     top: -70px;
     padding-top: 115px;
-    transform: skew(-10deg);
+    transform: skewY(-10deg);
     box-shadow: 0 3px 24px rgba(0,0,0,.75);
     &-wrapper {
-      transform: skew(10deg);
+      transform: skewY(10deg);
     }
 
     &-calendar {
