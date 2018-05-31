@@ -382,9 +382,7 @@ flex: 1;
     background-image: url("../img/noize_dark.png");
     display: block;
   }
-}
 
-@media only screen and (min-width: 768px) {
   .button {
     text-align: center;
   }
@@ -453,5 +451,12 @@ flex: 1;
       margin-right: 30px;
 
     }
+  }
+
+  .chart__diagramm {
+    max-width: 85%;
+    width: auto;
+    height: auto;
+    margin-bottom: 45px;
   }
 }
